@@ -22,10 +22,10 @@
 		BA0ADA721C45153300AB76F7 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F0220615C857EF0030BBEF /* SVProgressHUD.m */; };
 		BA0ADA731C45153C00AB76F7 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB14F9B1AFBCB57003C2641 /* SVRadialGradientLayer.m */; };
 		BA0ADA741C45154700AB76F7 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9D7DCF1AB345540039B273 /* SVIndefiniteAnimatedView.m */; };
-		BA0ADA751C45155100AB76F7 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65F0220D15C858060030BBEF /* SVProgressHUD.bundle */; };
 		BA0ADA761C45156C00AB76F7 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB14F9A1AFBCB57003C2641 /* SVRadialGradientLayer.h */; };
 		BA0ADA771C45156C00AB76F7 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9D7DCE1AB345540039B273 /* SVIndefiniteAnimatedView.h */; };
 		BA0ADA781C4515A900AB76F7 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F0220415C857EF0030BBEF /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA0ADA7B1C451F0300AB76F7 /* SVProgressHUD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0ADA7A1C451F0300AB76F7 /* SVProgressHUD.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +57,7 @@
 		BA0ADA6A1C45110100AB76F7 /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0ADA6C1C45110100AB76F7 /* SVProgressHUDTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProgressHUDTV.h; sourceTree = "<group>"; };
 		BA0ADA6E1C45110100AB76F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0ADA7A1C451F0300AB76F7 /* SVProgressHUD.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SVProgressHUD.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +159,7 @@
 			children = (
 				BA0ADA6C1C45110100AB76F7 /* SVProgressHUDTV.h */,
 				BA0ADA6E1C45110100AB76F7 /* Info.plist */,
+				BA0ADA7A1C451F0300AB76F7 /* SVProgressHUD.xcassets */,
 			);
 			path = SVProgressHUDTV;
 			sourceTree = "<group>";
@@ -290,7 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0ADA751C45155100AB76F7 /* SVProgressHUD.bundle in Resources */,
+				BA0ADA7B1C451F0300AB76F7 /* SVProgressHUD.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
