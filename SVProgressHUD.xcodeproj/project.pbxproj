@@ -25,7 +25,6 @@
 		BA0ADA761C45156C00AB76F7 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CB14F9A1AFBCB57003C2641 /* SVRadialGradientLayer.h */; };
 		BA0ADA771C45156C00AB76F7 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9D7DCE1AB345540039B273 /* SVIndefiniteAnimatedView.h */; };
 		BA0ADA781C4515A900AB76F7 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F0220415C857EF0030BBEF /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA0ADA7B1C451F0300AB76F7 /* SVProgressHUD.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0ADA7A1C451F0300AB76F7 /* SVProgressHUD.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -292,7 +291,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA0ADA7B1C451F0300AB76F7 /* SVProgressHUD.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +607,7 @@
 				BA0ADA701C45110100AB76F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
