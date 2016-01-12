@@ -8,6 +8,14 @@
 #import <UIKit/UIKit.h>
 #import <AvailabilityMacros.h>
 
+#if TARGET_OS_TV
+//! Project version number for SVProgressHUDTV.
+FOUNDATION_EXPORT double SVProgressHUDTVVersionNumber;
+
+//! Project version string for SVProgressHUDTV.
+FOUNDATION_EXPORT const unsigned char SVProgressHUDTVVersionString[];
+#endif
+
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < 70000
 
 #define UI_APPEARANCE_SELECTOR
