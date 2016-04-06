@@ -585,7 +585,7 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
                                              selector:@selector(positionHUD:)
                                                  name:UIApplicationDidChangeStatusBarOrientationNotification
                                                object:nil];
-#endif
+
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(positionHUD:)
                                                  name:UIApplicationDidBecomeActiveNotification
@@ -610,6 +610,7 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
                                              selector:@selector(positionHUD:)
                                                  name:UIKeyboardDidShowNotification
                                                object:nil];
+#endif
 }
 
 - (NSDictionary*)notificationUserInfo{
@@ -644,18 +645,21 @@ static const CGFloat SVProgressHUDUndefinedProgress = -1;
     
     // Get keyboardHeight in regards to current state
     if(notification){
+#if TARGET_OS_IOS
         NSDictionary* keyboardInfo = [notification userInfo];
+
         CGRect keyboardFrame = [keyboardInfo[UIKeyboardFrameBeginUserInfoKey] CGRectValue];
         animationDuration = [keyboardInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
         
         if(notification.name == UIKeyboardWillShowNotification || notification.name == UIKeyboardDidShowNotification){
             keyboardHeight = CGRectGetWidth(keyboardFrame);
-#if TARGET_OS_IOS
+
             if(ignoreOrientation || UIInterfaceOrientationIsPortrait(orientation)){
                 keyboardHeight = CGRectGetHeight(keyboardFrame);
             }
-#endif
+
         }
+#endif
     } else{
         keyboardHeight = self.visibleKeyboardHeight;
     }
